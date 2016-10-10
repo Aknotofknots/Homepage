@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/animation.css">
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -27,22 +28,68 @@
     <nav>
       <ul>
         <li><a href="#navContent1" tabindex="1">Se och göra<span class="tooltip">Luelå erbjuder dessa aktiviter för dig</span></a></li>
-        <li><a href="#navContent2" tabindex="1">Boende<span class="tooltip">Hur vill du bo?</span></a></li>
-        <li><a href="#" tabindex="1">Näringsliv<span class="tooltip">Sätt igång en dialog med våra företag</span></a></li>
+        <li><a href="#navContent2" tabindex="1">Camping och boende<span class="tooltip">Hur vill du bo?</span></a></li>
+        <li><a href="#navContent3" tabindex="1">Näringsliv<span class="tooltip">Sätt igång en dialog med våra företag</span></a></li>
         <li><a href="#polarbear" tabindex="1">Kontakta oss<span class="tooltip">Här kan du nå oss</span></a></li>
       </ul>
     </nav>
 
     <main>
-      <section class="navContent navContent-col-1 navContent-height-300" id="navContent1" tabindex="1">
+
+      <div id="slider">
+        <!-- Slider container -->
+        <div id="mask">
+          <!-- Mask -->
+          <ul>
+            <li id="first" class="firstanimation">
+              <!-- ID for tooltip and class for animation -->
+              <a href="#"> <img src="../images/Lule%C3%A5_stad.jpg" width="680px" height="320" alt="Luleå stad" /> </a>
+              <div class="tooltip1">
+                <h1>Välkommen till Luleå</h1> </div>
+            </li>
+
+            <li id="second" class="secondanimation">
+              <a href="#"> <img src="../images/scandichotel.jpg" width="680px" height="320px" alt="Scandic hotel i Luleå" /> </a>
+              <div class="tooltip1">
+                <h1>Bo på Scandic hotell</h1> </div>
+            </li>
+
+            <li id="third" class="thirdanimation">
+              <a href="#"> <img src="../images/camp_lulea.jpg" width="680px" height="320px" alt="Snowalker" /> </a>
+              <div class="tooltip1">
+                <h1>Camping i den pittoreska skärgården</h1> </div>
+            </li>
+
+            <li id="fourth" class="fourthanimation">
+              <a href="#"> <img src="../images/kulturenshus.jpg" width="680px" height="320" alt="norrbottenteatern" /> </a>
+              <div class="tooltip1">
+                <h1>Avnjut konst på Kulturens hus</h1> </div>
+            </li>
+
+            <li id="fifth" class="fifthanimation">
+              <a href="#"> <img src="../images/sunny-forest.jpg" width="680px" height="320px" alt="Luleå natur" /> </a>
+              <div class="tooltip1">
+                <h1>Upplev Luleås natur</h1> </div>
+            </li>
+          </ul>
+
+        </div>
+        <!-- End Mask -->
+        <div class="progress-bar"></div>
+        <!-- Progress Bar -->
+      </div>
+
+
+
+<!--      <section class="navContent navContent-col-1 navContent-height-300" id="navContent1" tabindex="1">
         <h4>Detta erbjuder Luleå för dig</h4>
         <iframe src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
-      </section>
+      </section>-->
 
-      <section class="navContent navContent-col-2 navContent-height-300 bg-slider" tabindex="1">
+<!--      <section class="navContent navContent-col-2 navContent-height-300" tabindex="1"> &lt;!&ndash; bg-slider (add as class for a image slider func ) &ndash;&gt;
         <h4>Luleås natur</h4>
-      </section>
-      <section class="navContent navContent-col-2 navContent-height-300" tabindex="1">
+      </section>-->
+      <section class="navContent navContent-col-1 navContent-height-300" tabindex="1">
         <h4>Luleå podcast - "I sammarbete med facebook" </h4>
         <audio controls>
           <source src="../sound/cat.ogg" type="audio/ogg">
@@ -51,18 +98,18 @@
         </audio>
       </section>
                                                                                       
-      <section class="navContent navContent-col-3 navContent-height-150" tabindex="1"><h4>Lägenheter</h4></section>
-      <section class="navContent navContent-col-3 navContent-height-150" tabindex="1"><h4>Villor</h4></section>
-      <section class="navContent navContent-col-3 navContent-height-150" tabindex="1"><h4>Studentboende</h4></section>
+      <section id="navContent1" class="navContent navContent-col-3 navContent-height-200" tabindex="1"><h4>Festivaler</h4></section>
+      <section class="navContent navContent-col-3 navContent-height-200" tabindex="1"><h4>Naturupplevelser</h4></section>
+      <section id="navContent2" class="navContent navContent-col-3 navContent-height-200" tabindex="1"><h4>Studentboende</h4></section>
 
-      <section class="navContent navContent-col-4 navContent-height-150" tabindex="1"><h4>Fjällen</h4></section>
-      <section class="navContent navContent-col-4 navContent-height-150" tabindex="1"><h4>Skidåkning</h4></section>
-      <section class="navContent navContent-col-4 navContent-height-150" tabindex="1"><h4>Orientering</h4></section>
-      <section class="navContent navContent-col-4 navContent-height-150" tabindex="1"><h4>Luleå stad</h4></section>
+      <section class="navContent navContent-col-4 navContent-height-200" tabindex="1"><h4>Lägenheter / Villa</h4></section>
+      <section class="navContent navContent-col-4 navContent-height-200" tabindex="1"><h4>First camp</h4></section>
+      <section id="navContent3" class="navContent navContent-col-4 navContent-height-200" tabindex="1"><h4>Facebook serverhall</h4></section>
+      <section class="navContent navContent-col-4 navContent-height-200" tabindex="1"><h4>Industrier</h4></section>
 
-      <section class="navContent navContent-col-4 navContent-height-150" tabindex="1"><h4>IT sektorn</h4></section>
-      <section class="navContent navContent-col-4 navContent-height-150" tabindex="1"><h4>Industri</h4></section>
-      <section class="navContent navContent-col-2 navContent-height-150" tabindex="1"><h4>VVS</h4></section>
+      <section class="navContent navContent-col-2 navContent-height-200 center_col" tabindex="1"><h4>Utbildning</h4></section>
+<!--      <section class="navContent navContent-col-4 navContent-height-150" tabindex="1"><h4>Industri</h4></section>
+      <section class="navContent navContent-col-2 navContent-height-150" tabindex="1"><h4>VVS</h4></section>-->
     </main>
     <div class="clear"></div>
 
@@ -72,7 +119,6 @@
         <span class="tooltipBear">Besök oss gärna på instagram</span>
       </div>
     </article>
-
 
 
 
