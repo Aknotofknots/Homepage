@@ -6,10 +6,10 @@
 	border: 5px solid #eaeaea;
   border-radius: 6px;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-	width: 640px;
-	height: 320px;
+	width: 800px;
+	height: 460px;
 	margin: 40px auto 120px;
-	overflow: visible;
+	overflow: hidden;
 	position: relative;
 }
 
@@ -17,7 +17,7 @@
 
 #mask {
 	overflow: hidden;
-	height: 320px;
+	height: 460px;
 }
 
 
@@ -32,11 +32,11 @@
 
 
 #slider li {
-	height: 320px;
+	height: 460px;
 	list-style: outside none none;
 	position: absolute;
 	left: -325px;
-	width: 680px;
+	width: 800px;
 }
 
 #slider li.firstanimation {
@@ -261,8 +261,8 @@
 
 .progress-bar {
 	position: relative;
-	top: -5px;
-	width: 680px;
+	top: -15px;
+	width: 800px;
 	height: 5px;
 	background: #fff;
 	animation: fullexpand 25s ease-out infinite;

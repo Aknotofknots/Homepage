@@ -16,7 +16,7 @@ hr {
 #wrapper{
   width: 80%;
   height: 1200px;
-  margin: 5% auto 0 auto; /* top right bottom left */
+  margin: 2% auto 0 auto; /* top right bottom left */
 /*  background-color: #00b3ee;*/
 }
 header{
@@ -136,10 +136,14 @@ body{
   -moz-box-shadow: 0px 13px 69px 14px rgba(0,0,0,0.49);
   box-shadow: 0px 13px 69px 14px rgba(0,0,0,0.49);
 }
+
 .navContent-col-1{ width: 100%; }
 .navContent-col-2{ width: 50%; }
-.navContent-col-3{ width: 33.33%; }
+.navContent-col-2 img{ width: 50%; height: 100%;}
+.navContent-col-3{ width: 33.33%;}
+.navContent-col-3 img{width: 100%; height: 100%;}
 .navContent-col-4{ width: 25%; }
+.navContent-col-4 img{ width: 100%; height: 100%; }
 .navContent-height-150{ height: 150px; }
 .navContent-height-200{ height: 200px; }
 .navContent-height-300{ height: 300px; }
@@ -228,11 +232,10 @@ footer > p{
 footer > section >img{
   position: absolute;
   right: 5%;
-  bottom: 5%;
-  width: 20%;
+	top:20%;
   transform: rotate(-180deg);
-
 }
+#svglogo {width: 100%; height: 15%;}
 
 
 #footerUl > li:before{
